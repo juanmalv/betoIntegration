@@ -1,19 +1,16 @@
 package operations
 
-type BuildRequestFunc func() error
-type BuildTransportFunc func() error
-type BuildSendFunc func() error
+import "fmt"
 
-//Esta interfaz debe estar adaptada a las necesidades de la Integracion y debe ser expandida en casos comunes a la misma
 type Operation interface {
-	BuildRequest() error
-	SetBuildRequest(f BuildRequestFunc)
+	execute(operation IntegrationFlow) //Deberia recibir trx y ctx
+}
 
-	BuildTransport() error
-	SetBuildTransport(f BuildTransportFunc)
 
-	SetSend(f BuildSendFunc)
-	Send() error
+func execute(operation IntegrationFlow) error{
+	err := operation.BuildRequest()
+	if err != nil{
+		return fmt.Errorf("Error!")
+	}
 
-	BuildResponse()
 }

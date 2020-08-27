@@ -8,3 +8,11 @@ type Transport struct{
 	header string
 }
 
+func (t *Transport) BuildTransport() error {
+	t.header = "xml"
+	return nil
+}
+
+func (t *Transport) IsMock() bool {
+	return t != nil
+}

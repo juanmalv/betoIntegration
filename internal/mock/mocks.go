@@ -1,0 +1,6 @@
+package mock
+
+
+func IsMocked(){
+
+}
