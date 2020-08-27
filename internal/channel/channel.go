@@ -1,7 +1,7 @@
 package channel
 
 import (
-	"beto_integration/internal/transport"
+	"github.com/juanmalv/beto_integration/internal/transport"
 	"fmt"
 )
 

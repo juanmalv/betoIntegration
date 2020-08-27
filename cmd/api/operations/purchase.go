@@ -1,10 +1,10 @@
 package operations
 
 import (
-	"beto_integration/internal/channel"
-	"beto_integration/internal/requests"
-	"beto_integration/internal/responses"
-	"beto_integration/internal/transport"
+	"github.com/juanmalv/beto_integration/internal/channel"
+	"github.com/juanmalv/beto_integration/internal/requests"
+	"github.com/juanmalv/beto_integration/internal/responses"
+	"github.com/juanmalv/beto_integration/internal/transport"
 )
 
 type PurchaseOperation struct {
@@ -42,8 +42,6 @@ func (p *PurchaseOperation) SendRequest() error {
 	if err != nil{
 		return err
 	}
-
-	p.channelService.ChannelResponse = channelResponse
 
 	return nil
 }

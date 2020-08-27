@@ -1,7 +1,7 @@
 package integration
 
 import (
-	"beto_integration/cmd/api/operations"
+	"github.com/juanmalv/beto_integration/cmd/api/operations"
 	"fmt"
 )
 
