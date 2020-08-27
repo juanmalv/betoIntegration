@@ -1,8 +1,8 @@
 package integration
 
 import (
-	"github.com/juanmalv/beto_integration/cmd/api/operations"
 	"fmt"
+	"github.com/juanmalv/betoIntegration/internal/operations"
 )
 
 func Run(){

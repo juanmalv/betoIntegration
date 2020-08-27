@@ -1,8 +1,8 @@
 package channel
 
 import (
-	"github.com/juanmalv/beto_integration/internal/transport"
 	"fmt"
+	"github.com/juanmalv/betoIntegration/internal/services/transport"
 )
 
 type Channel struct {
